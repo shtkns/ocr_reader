@@ -3,7 +3,8 @@ name: Build EXE
 on:
   push:
     tags:
-      - 'v*' # v1.0, v1.1 などのタグを付けた時だけ実行される設定
+      - 'v*'
+  workflow_dispatch:
 
 jobs:
   build:
